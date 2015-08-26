@@ -3253,10 +3253,10 @@ angular.module('myApp', ['mobile-angular-ui.core']);
   angular.forEach(
     {
       uiScrollTop: function(elem){
-        return elem.scrollTop === 0;
+        return elem.scrollTop < elem.clientHeight / 4;
       }, 
       uiScrollBottom: function(elem){
-        return elem.scrollHeight === elem.scrollTop + elem.clientHeight;
+        return elem.scrollHeight - elem.scrollTop  < elem.clientHeight * 5 / 4;
       }
     }, 
     function(reached, directiveName){
