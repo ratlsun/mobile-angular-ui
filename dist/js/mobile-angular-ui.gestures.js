@@ -391,7 +391,7 @@ app.directive('dragMe', ['$drag', function($drag){
    * @as class
    */
   module.factory('$swipe', ['$touch', function($touch) {
-    var VELOCITY_THRESHOLD = 0; // px/sec
+    var VELOCITY_THRESHOLD = 50; // px/sec
     var MOVEMENT_THRESHOLD = 10; // px
     var TURNAROUND_MAX = 10; // px
     var ANGLE_THRESHOLD = 10; // deg
