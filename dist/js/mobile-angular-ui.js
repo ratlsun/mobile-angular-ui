@@ -1180,7 +1180,7 @@ a.active {
 		orgHandler(event);
 	};
 
-	FastClick.attach($window.document.body);
+	//FastClick.attach($window.document.body);
 
   }]);
 
